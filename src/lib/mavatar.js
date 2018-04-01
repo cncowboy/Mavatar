@@ -184,6 +184,7 @@
       });
     },
     getfileInfo: function () {
+      if (!this.file) return false;
       var file = this.file;
       file.width = this.imgWidth;
       file.height = this.imgHeight;
