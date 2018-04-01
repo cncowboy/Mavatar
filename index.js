@@ -175,6 +175,7 @@ var EXIF = require('exif-js');
     },
     getfileInfo: function () {
       var file = this.file;
+      if (!file) return false;
       file.width = this.imgWidth;
       file.height = this.imgHeight;
       return file;
